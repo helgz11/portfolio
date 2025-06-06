@@ -127,28 +127,39 @@
             <p></p>
 
     </section>
-    <!-- Contact Me section Start -->
-     <div class="container" id="contact">
+<!-- Contact Me section Start -->
+    <div class="container" id="contact">
   <div style="text-align:center">
     <h2>Get in touch!</h2>
   </div>
-  <div class="row">
-    <div class="center">
-      </div>
-    </div>
-    <div style="center"></div>
-      <div class="center">
-      <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="a645ce93-f5f8-4370-ab2c-64253dbfbb5c">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="">
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-        <input type="submit" value="Submit">
-      </form>
+
+  <div class="center" style="max-width: 500px; margin: auto;">
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="a645ce93-f5f8-4370-ab2c-64253dbfbb5c">
+
+      <!-- First Name -->
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+
+      <!-- Last Name -->
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+
+      <!-- Email Address -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <!-- Message / Subject -->
+      <label for="subject">Message</label>
+      <textarea id="subject" name="message" placeholder="Write your message here..." required></textarea>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+</div>
+
     </div>
   </div>
 </div>
